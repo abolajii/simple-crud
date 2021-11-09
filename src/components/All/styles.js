@@ -28,6 +28,7 @@ export const TableHeader = styled.thead``;
 
 export const TableHeading = styled.th`
 	padding: 10px 0;
+	text-align: center;
 `;
 
 export const TableColumn = styled.td`

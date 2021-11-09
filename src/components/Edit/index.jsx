@@ -16,7 +16,6 @@ import {
 } from './styles';
 import * as ROUTES from '../../constants/routes';
 import axios from 'axios';
-import { v4 } from 'uuid';
 import { useNavigate, useParams } from 'react-router';
 const Edit = () => {
 	const navigate = useNavigate();
@@ -37,7 +36,7 @@ const Edit = () => {
 				setRegion({ value: region, label: regionLabel });
 			})
 			.catch((err) => console.log(err));
-	}, []);
+	}, [id]);
 
 	const [teamName, setTeamName] = useState('');
 	const [nickName, setNickName] = useState('');
