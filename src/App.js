@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { All, Create, Edit, Header } from './components';
+import { All, Create, Edit, Header, Modal } from './components';
 import * as ROUTES from './constants/routes';
 
 const App = () => {
@@ -12,6 +12,7 @@ const App = () => {
 				<Route path={ROUTES.EDIT} element={<Edit />} />
 				<Route path={ROUTES.CREATE} element={<Create />} />
 			</Routes>
+			<Modal />
 		</>
 	);
 };

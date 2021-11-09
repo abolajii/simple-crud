@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Search } from '..';
 import {
 	BottomTable,
@@ -14,12 +14,12 @@ import {
 	TableRow,
 } from './styles';
 
-import { Link, useNavigate } from 'react-router-dom';
-import * as ROUTES from '../../constants/routes';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { ModalContext } from '../../context/Modal';
 
 const Home = () => {
-	const [data, setData] = useState([]);
+	const { setModal, data, setData, setText, setId } = useContext(ModalContext);
 
 	useEffect(() => {
 		axios
@@ -28,7 +28,8 @@ const Home = () => {
 				setData(res.data);
 			})
 			.catch((err) => console.log(err));
-	}, []);
+	}, [setData]);
+
 	return (
 		<Container>
 			<Inner>
@@ -58,7 +59,13 @@ const Home = () => {
 												<Link to={`/edit/${each.id}`}>
 													<Edit />
 												</Link>
-												<Delete />
+												<Delete
+													onClick={() => {
+														setModal(true);
+														setText(each.team_name);
+														setId(each.id);
+													}}
+												/>
 											</TableColumn>
 										</TableRow>
 									);

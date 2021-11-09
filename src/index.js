@@ -2,6 +2,8 @@ import { render } from 'react-dom';
 import App from './App';
 import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter as Router } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ModalContextProvider from './context/Modal';
 
 const GlobalStyles = createGlobalStyle`
 	* {
@@ -21,8 +23,10 @@ const GlobalStyles = createGlobalStyle`
 render(
 	<>
 		<Router>
-			<GlobalStyles />
-			<App />
+			<ModalContextProvider>
+				<GlobalStyles />
+				<App />
+			</ModalContextProvider>
 		</Router>
 	</>,
 	document.getElementById('root')

@@ -1,36 +1,36 @@
 {
   "teams": [
     {
-      "id": "618925a85993eb001837c53a",
-      "team_name": "Dolphin FC",
-      "nick_name": "DFC",
-      "stadium": "Dolphin Arena",
+      "stadium": "New traford",
+      "team_name": "weback",
       "country": "Nigeria",
+      "region": "East Africa",
+      "nick_name": "WBK",
+      "id": "43e94834-1893-49dd-9708-8418ad43e736"
+    },
+    {
+      "id": "e6a3898a-73c0-4612-9772-bc53ed8829cd",
+      "team_name": "hshshsh",
+      "nick_name": "knkwdmkwdkwm",
+      "stadium": "nkwskwnknwkn",
+      "country": "South Africa",
       "region": "West Africa"
     },
     {
-      "id": "618927745993eb001837c53b",
-      "team_name": "Kwara FC",
-      "nick_name": "KFC",
-      "stadium": "Main Bowl",
-      "country": "Nigeria",
+      "id": "cec0ed50-a698-457e-b805-a48d573e240d",
+      "team_name": "test",
+      "nick_name": "Confirm",
+      "stadium": "My stadium",
+      "country": "South Africa",
       "region": "West Africa"
     },
     {
-      "id": "5a114b84-4ea6-405e-a059-00c658f36e27",
-      "team_name": "Abolaji FC",
-      "nick_name": "AJ",
-      "stadium": "Ayetoro",
+      "id": "321576a8-6a43-415e-931e-04d1c86953b3",
+      "team_name": "kindly",
+      "nick_name": "subscribe",
+      "stadium": "myway",
       "country": "Nigeria",
       "region": "East Africa"
-    },
-    {
-      "stadium": "Justse",
-      "team_name": "Jigawa",
-      "country": "Nigeria",
-      "region": "West Africa",
-      "nick_name": "JGA",
-      "id": "ef900c04-ba4e-4e75-b49f-12ab9e618068"
     }
   ]
 }
