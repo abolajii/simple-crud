@@ -1,34 +1,26 @@
 {
   "teams": [
     {
-      "stadium": "New traford",
-      "team_name": "weback",
+      "id": "993bac04-a4d2-460d-81e3-45dd0128c42d",
+      "team_name": "Akwa Ibom",
+      "nick_name": "ABM",
+      "stadium": "Akwa stadium",
+      "country": "South Africa",
+      "region": "East Africa"
+    },
+    {
+      "id": "4e190cb6-3e34-4a5a-a788-39aa4711223b",
+      "team_name": "Kwara united",
+      "nick_name": "KWD",
+      "stadium": "Main bowl",
       "country": "Nigeria",
-      "region": "East Africa",
-      "nick_name": "WBK",
-      "id": "43e94834-1893-49dd-9708-8418ad43e736"
-    },
-    {
-      "id": "e6a3898a-73c0-4612-9772-bc53ed8829cd",
-      "team_name": "hshshsh",
-      "nick_name": "knkwdmkwdkwm",
-      "stadium": "nkwskwnknwkn",
-      "country": "South Africa",
       "region": "West Africa"
     },
     {
-      "id": "cec0ed50-a698-457e-b805-a48d573e240d",
-      "team_name": "test",
-      "nick_name": "Confirm",
-      "stadium": "My stadium",
-      "country": "South Africa",
-      "region": "West Africa"
-    },
-    {
-      "id": "321576a8-6a43-415e-931e-04d1c86953b3",
-      "team_name": "kindly",
-      "nick_name": "subscribe",
-      "stadium": "myway",
+      "id": "db03410b-fdd0-4fc6-87c0-f86625e53306",
+      "team_name": "Dolphin",
+      "nick_name": "DFC",
+      "stadium": "Dolphin arena",
       "country": "Nigeria",
       "region": "East Africa"
     }

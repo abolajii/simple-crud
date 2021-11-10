@@ -15,7 +15,7 @@ export const Box = styled.div`
 	display: flex;
 	align-items: center;
 `;
-export const SearchText = styled.p`
+export const SearchText = styled.span`
 	margin-right: 8px;
 `;
 
@@ -51,5 +51,6 @@ export const CreateButton = styled(Link)`
 	border-radius: 3px;
 	&:hover {
 		opacity: 0.8;
+		color: white;
 	}
 `;
