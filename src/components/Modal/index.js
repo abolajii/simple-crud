@@ -15,20 +15,35 @@ const Modal = () => {
 	const { modal, text, setModal, setData, id } = useContext(ModalContext);
 
 	const deleteTeam = () => {
-		axios
-			.delete(`http://localhost:5000/teams/${id}`)
-			.then((res) => {
-				setModal(false);
+		// axios
+		// 	.delete(`http://localhost:5000/teams/${id}`)
+		// 	.then((res) => {
+		// 		setModal(false);
 
-				axios
-					.get('http://localhost:5000/teams')
-					.then((res) => {
-						setData(res.data);
-					})
-					.catch((err) => console.log(err));
-			})
+		// 		axios
+		// 			.get('http://localhost:5000/teams')
+		// 			.then((res) => {
+		// 				setData(res.data);
+		// 			})
+		// 			.catch((err) => console.log(err));
+		// 	})
+		// 	.catch((err) => {
+		// 		console.log(err);
+		// 	});
+
+		axios
+			.all(
+				[axios.delete(`http://localhost:5000/teams/${id}`)],
+				axios.get('http://localhost:5000/teams')
+			)
+			.then(
+				axios.spread((del, get) => {
+					setModal(false);
+					setData(get);
+				})
+			)
 			.catch((err) => {
-				console.log(err);
+				console.error(err);
 			});
 	};
 	return (
